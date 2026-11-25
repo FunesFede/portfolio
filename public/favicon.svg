@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <style>
+    .f { stroke: #0A0A0B; }
+    .t { stroke: #123E8C; }
+    @media (prefers-color-scheme: dark) {
+      .f { stroke: #FFFFFF; }
+      .t { stroke: #5B9DFF; }
+    }
+  </style>
+  <g transform="translate(-4.8 -3.8) scale(1.15)" fill="none" stroke-width="8">
+    <path d="M24 58 V22 A12 12 0 0 1 48 22" class="f"/><path d="M12 32 H38" class="t"/>
+  </g>
+</svg>
