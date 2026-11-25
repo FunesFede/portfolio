@@ -1,8 +1,8 @@
 import Monograma from "./Monograma";
 import BrandArt from "./BrandArt";
-import { GITHUB_URL, NAV_ITEMS } from "../data/links";
+import { NAV_ITEMS, SOCIAL_LINKS } from "../data/links";
 
-const FOOTER_LINKS = [...NAV_ITEMS, { href: GITHUB_URL, label: "GitHub", external: true }];
+const FOOTER_LINKS = [...NAV_ITEMS, ...SOCIAL_LINKS.map((link) => ({ ...link, external: true }))];
 
 export default function Footer() {
 	const year = new Date().getFullYear();
