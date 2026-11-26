@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Monograma from "./Monograma";
-import { NAV_ITEMS } from "../data/links";
+import DownloadIcon from "./DownloadIcon";
+import { CV_URL, NAV_ITEMS } from "../data/links";
 
 export default function Header() {
 	const [scrolled, setScrolled] = useState(false);
@@ -47,6 +48,15 @@ export default function Header() {
 									</a>
 								</li>
 							))}
+							<li>
+								<a
+									href={CV_URL}
+									className='inline-flex h-9 items-center gap-2 rounded-lg px-3.5 text-sm font-semibold ring-1 ring-inset ring-border transition-colors hover:ring-brand-blue hover:text-brand-blue'
+								>
+									<DownloadIcon />
+									Descargar CV
+								</a>
+							</li>
 						</ul>
 					</nav>
 
@@ -78,6 +88,16 @@ export default function Header() {
 						</li>
 					))}
 				</ul>
+				<div className='px-4 pt-6'>
+					<a
+						href={CV_URL}
+						onClick={() => setMenuOpen(false)}
+						className='flex min-h-12 items-center justify-center gap-2 rounded-lg text-base font-semibold ring-1 ring-inset ring-border transition-colors hover:ring-brand-blue hover:text-brand-blue'
+					>
+						<DownloadIcon />
+						Descargar CV
+					</a>
+				</div>
 			</nav>
 		</>
 	);

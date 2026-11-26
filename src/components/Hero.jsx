@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Button from "./Button";
 import BrandArt from "./BrandArt";
+import DownloadIcon from "./DownloadIcon";
+import { CV_URL } from "../data/links";
 
 export default function Hero() {
 	const [avatarError, setAvatarError] = useState(false);
@@ -21,8 +23,9 @@ export default function Hero() {
 					</p>
 					<div className='mt-10 flex flex-wrap gap-3'>
 						<Button href='#proyectos'>Ver proyectos</Button>
-						<Button href='#contacto' variant='outline'>
-							Hablemos
+						<Button href={CV_URL} variant='outline'>
+							<DownloadIcon />
+							Descargar CV
 						</Button>
 					</div>
 					<BrandArt src='elementos/franja-arcos' className='mt-16 w-56 opacity-50' />
