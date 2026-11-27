@@ -13,8 +13,8 @@ export default function Skills() {
 							Habilidades
 						</h2>
 						<p className='mt-5 text-lg/8 text-pretty text-muted-foreground'>
-							Lo que uso todos los días, algunos aprenidos por mi cuenta, otros gracias a la facultad: Ingeniería en Sistemas de Información en la UTN FRC,
-							cursando 4.º año.
+							Lo que uso todos los días, algunos aprendidos por mi cuenta, otros gracias a la facultad y mi carrera: Ingeniería en Sistemas de Información en la UTN
+							FRC, cursando 4.º año.
 						</p>
 					</header>
 					<BrandArt src='elementos/composicion-habilidades' className='w-full max-w-xs shrink-0 opacity-40' />
@@ -30,7 +30,10 @@ export default function Skills() {
 									<dd className='mt-2.5'>
 										<ul className='flex flex-wrap gap-2'>
 											{items.map((item) => (
-												<li key={item} className='rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-foreground/85 transition-colors hover:bg-brand-navy hover:text-white'>
+												<li
+													key={item}
+													className='rounded-md bg-muted px-2.5 py-1 font-mono text-xs text-foreground/85 transition-colors hover:bg-brand-navy hover:text-white'
+												>
 													{item}
 												</li>
 											))}
